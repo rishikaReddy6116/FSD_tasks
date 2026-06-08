@@ -1,0 +1,403 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+    color:#212529;
+    overflow-x:hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
+}
+
+.logo{
+    width:100px;
+    height:80px;
+    margin-left:50px;
+    object-fit:contain;
+}
+
+.navbar-brand{
+    font-size:1.2rem;
+    font-weight:600;
+    letter-spacing:0.5px;
+    text-decoration:none;
+}
+
+.nav-link{
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+.btn{
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-section h1{
+    line-height:1.2;
+}
+
+.hero-section img{
+    border-radius:20px;
+    transition:.4s;
+}
+
+.hero-section img:hover{
+    transform:scale(1.03);
+}
+
+/* =========================
+   CAROUSEL
+========================= */
+
+.carousel-item img{
+    height:500px;
+    object-fit:cover;
+}
+
+.carousel{
+    box-shadow:0 8px 30px rgba(0,0,0,.15);
+}
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+section h2{
+    font-weight:700;
+    position:relative;
+}
+
+section h2::after{
+    content:'';
+    width:80px;
+    height:4px;
+    background:#0d6efd;
+    display:block;
+    margin:12px auto;
+    border-radius:10px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.card-title{
+    font-weight:600;
+}
+
+.card-text{
+    color:#6c757d;
+}
+
+/* =========================
+   ANNOUNCEMENTS
+========================= */
+
+.alert{
+    border:none;
+    border-radius:15px;
+    font-weight:500;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+/* =========================
+   ACCORDION
+========================= */
+
+.accordion-button{
+    font-weight:600;
+}
+
+.accordion-button:not(.collapsed){
+    background:#0d6efd;
+    color:white;
+}
+
+.accordion-item{
+    border-radius:10px !important;
+    overflow:hidden;
+    margin-bottom:12px;
+    border:none;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top:50px;
+}
+
+footer i{
+    font-size:1.3rem;
+    transition:.3s;
+}
+
+footer i:hover{
+    color:#ffc107;
+    transform:translateY(-3px);
+}
+
+/* =========================
+   REGISTRATION FORM
+========================= */
+
+.form-container{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.form-control,
+.form-select{
+    border-radius:10px;
+    padding:12px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:none;
+    border-color:#0d6efd;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.stats-card{
+    border-radius:20px;
+    color:white;
+    padding:25px;
+}
+
+.stats-card h3{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.stats-card p{
+    margin-bottom:0;
+    font-size:1rem;
+}
+
+.bg-students{
+    background:linear-gradient(135deg,#0d6efd,#3d8bfd);
+}
+
+.bg-present{
+    background:linear-gradient(135deg,#198754,#43c77b);
+}
+
+.bg-absent{
+    background:linear-gradient(135deg,#dc3545,#ff6b81);
+}
+
+.bg-placement{
+    background:linear-gradient(135deg,#6f42c1,#9b6dff);
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.table thead{
+    background:#0d6efd;
+    color:white;
+}
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card{
+    max-width:450px;
+    margin:auto;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.profile-card img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:25px auto;
+    border:5px solid #0d6efd;
+}
+
+.profile-info p{
+    margin-bottom:10px;
+}
+
+/* =========================
+   STUDENT ID CARD
+========================= */
+
+.id-card{
+    max-width:320px;
+    margin:auto;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.id-card-header{
+    background:#0d6efd;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+.id-card-body{
+    padding:20px;
+    text-align:center;
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+/* =========================
+   DARK MODE SUPPORT
+========================= */
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .card,
+.dark-mode .form-container,
+.dark-mode .contact-box{
+    background:#1f1f1f;
+    color:white;
+}
+
+.dark-mode .table{
+    color:white;
+}
+
+.dark-mode .accordion-button{
+    background:#1f1f1f;
+    color:white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .carousel-item img{
+        height:350px;
+    }
+
+    .hero-section{
+        text-align:center;
+    }
+}
+
+@media(max-width:768px){
+
+    .carousel-item img{
+        height:280px;
+    }
+
+    .card img{
+        height:200px;
+    }
+
+    .form-container,
+    .contact-box{
+        padding:25px;
+    }
+}
+
+@media(max-width:576px){
+
+    .display-4{
+        font-size:2rem;
+    }
+
+    .carousel-item img{
+        height:220px;
+    }
+
+    .navbar-brand{
+        font-size:1.2rem;
+    }
+
+    .profile-card img{
+        width:140px;
+        height:140px;
+    }
+}
+
