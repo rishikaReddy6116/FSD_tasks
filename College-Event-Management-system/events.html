@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Events | All Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Forces card images to look perfectly uniform without stretching */
+        .card-img-container {
+            height: 200px;
+            overflow: hidden;
+        }
+        .card-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        /* Cool zoom effect on image hover */
+        .event-card:hover .card-img-container img {
+            transform: scale(1.05);
+        }
+        .event-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">🎓 Campus Events</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3 my-2 my-lg-0">
+                        <a class="btn btn-primary fw-bold px-4 shadow-sm" href="register.html">Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold display-5">Explore Upcoming Events</h2>
+            <p class="text-muted fs-5">Find your interest, mark the date, and secure your spot today.</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm event-card overflow-hidden">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=600&auto=format&fit=crop" alt="Technical Quiz">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h5 class="card-title fw-bold mb-3">Technical Quiz</h5>
+                        <p class="card-text text-muted mb-4 flex-grow-1">
+                            Test your knowledge across core tech concepts, programming history, and recent innovations.
+                        </p>
+                        <div class="border-top pt-3 mb-3 text-secondary small">
+                            <div>📍 <strong>Venue:</strong> Main Auditorium</div>
+                            <div>📅 <strong>Date:</strong> Oct 15, 2026</div>
+                        </div>
+                        <a href="register.html" class="btn btn-outline-primary w-100 fw-semibold py-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm event-card overflow-hidden">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=600&auto=format&fit=crop" alt="Hackathon">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h5 class="card-title fw-bold mb-3">24-Hour Hackathon</h5>
+                        <p class="card-text text-muted mb-4 flex-grow-1">
+                            Form your squad, build a working prototype from scratch over a grueling, fun 24-hour cycle.
+                        </p>
+                        <div class="border-top pt-3 mb-3 text-secondary small">
+                            <div>📍 <strong>Venue:</strong> CS Lab 1 & 2</div>
+                            <div>📅 <strong>Date:</strong> Oct 16, 2026</div>
+                        </div>
+                        <a href="register.html" class="btn btn-outline-primary w-100 fw-semibold py-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm event-card overflow-hidden">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=600&auto=format&fit=crop" alt="Poster Presentation">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h5 class="card-title fw-bold mb-3">Poster Presentation</h5>
+                        <p class="card-text text-muted mb-4 flex-grow-1">
+                            Visually articulate your research papers, engineering theories, or creative design ideas to industry judges.
+                        </p>
+                        <div class="border-top pt-3 mb-3 text-secondary small">
+                            <div>📍 <strong>Venue:</strong> Seminar Hall A</div>
+                            <div>📅 <strong>Date:</strong> Oct 17, 2026</div>
+                        </div>
+                        <a href="register.html" class="btn btn-outline-primary w-100 fw-semibold py-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm event-card overflow-hidden">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=600&auto=format&fit=crop" alt="Coding Contest">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h5 class="card-title fw-bold mb-3">Coding Contest</h5>
+                        <p class="card-text text-muted mb-4 flex-grow-1">
+                            Race against time to solve complex computational and algorithmic problems using any language you prefer.
+                        </p>
+                        <div class="border-top pt-3 mb-3 text-secondary small">
+                            <div>📍 <strong>Venue:</strong> IT Lab 3</div>
+                            <div>📅 <strong>Date:</strong> Oct 15, 2026</div>
+                        </div>
+                        <a href="register.html" class="btn btn-outline-primary w-100 fw-semibold py-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm event-card overflow-hidden">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=600&auto=format&fit=crop" alt="Project Expo">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h5 class="card-title fw-bold mb-3">Project Expo</h5>
+                        <p class="card-text text-muted mb-4 flex-grow-1">
+                            A massive showcase displaying working electronic hardware, robotics, web structures, and mechanics open to everyone.
+                        </p>
+                        <div class="border-top pt-3 mb-3 text-secondary small">
+                            <div>📍 <strong>Venue:</strong> College Ground</div>
+                            <div>📅 <strong>Date:</strong> Oct 16, 2026</div>
+                        </div>
+                        <a href="register.html" class="btn btn-outline-primary w-100 fw-semibold py-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm event-card overflow-hidden">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600&auto=format&fit=crop" alt="Cultural Fest">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h5 class="card-title fw-bold mb-3">Cultural Fest</h5>
+                        <p class="card-text text-muted mb-4 flex-grow-1">
+                            Wrap up the week with live band performances, street dances, arts showcases, and fine food stalls.
+                        </p>
+                        <div class="border-top pt-3 mb-3 text-secondary small">
+                            <div>📍 <strong>Venue:</strong> Open Air Theatre</div>
+                            <div>📅 <strong>Date:</strong> Oct 18, 2026</div>
+                        </div>
+                        <a href="register.html" class="btn btn-outline-primary w-100 fw-semibold py-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto border-top border-secondary">
+        <div class="container">
+            <p class="mb-0 text-muted">&copy; 2026 Campus Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
